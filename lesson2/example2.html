@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+</head>
+<body>
+<script>
+/* Пользователю предложено ввести число от 1 до 5 если он вводит число большее 5, меньшее 1, или символ не являющийся числом, то выводится соответствующее сообщение */
+f=prompt('Введите число от 1 до 5: ','');
+try  {
+   if (f>5) {
+      throw '<p style="color:green">Число, которые Вы ввели больше 5.</p>';
+   }
+   if (f<1) {
+      throw '<p style="color:yellow">Число, которое Вы ввели меньше 1.</p>';
+   }
+   if (isNaN(f)) {
+      throw '<p style="color:red">То, что Вы ввели не является числом.</p>';
+   }
+   else {
+      document.write('Вы ввели: ' + f);
+   }
+}
+catch (er) {
+   document.write(er);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#mes
+{
+color:white;
+border-style:solid;
+width:350px;
+text-align:center;
+border-color:black;
+border-width:1px;
+padding-top:3px;
+padding-bottom:3px;
+background-color:blue;
+}
+</style>
+<script>
+function textChange() {
+   document.getElementById('mes').style.backgroundColor='green';
+}
+function textReturn() {
+   document.getElementById('mes').style.color='white';
+   document.getElementById('mes').style.backgroundColor='blue';
+}
+</script>
+</head>
+<body>
+<p id='mes' onmouseover='textChange()' onmouseout='textReturn()'>Наведите на этот текст курсор мыши.</p>
+</body>
+</html>

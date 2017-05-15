@@ -1,0 +1,27 @@
+<html>
+<head>
+<head>
+<meta charset="utf-8">
+</head>
+<script>
+//Создадим переменную x и присвоим ей значение 33
+x=33;
+//Удалим переменную x и выведем результат выполнение данной операции 
+document.write(delete x);
+document.write('<br />');
+//Теперь попробуем удалить переменную объявленную с помощью var
+var y=100;
+document.write(delete y);
+document.write('<br />');
+//Попробуем удалить предопределенное свойство PI объекта Math
+document.write(delete Math.PI);
+document.write('<br />');
+//Создадим массив содержащий 4 элемента и выведем его содержимое
+g=new Array('Яблоко','Груша','Мешок с деньгами', 'Лимон');
+document.write(g+'<br />');
+//Удалим 3й элемент массива и выведем его содержимое после операции
+delete g[2];
+document.write(g);
+</script>
+</head>
+</html>

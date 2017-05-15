@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body onload='start()'>
+<p id='text1'>Здесь будет отображено текущее время</p> 
+<script>
+//Зададим функцию time которая будет выводить текущее время в абзац с id=text1
+function time() {
+   //Определим текущее время
+   var dat = new Date();
+   var hour=dat.getHours();
+   var min=dat.getMinutes();
+   var sec=dat.getSeconds();
+   tim=hour+':'+min+':'+sec;
+   //Выведем текущее время в абзац с id=text1
+   document.getElementById('text1').innerHTML=tim;
+}
+/* Функция start будет запущена после полной загрузки документа и будет вызывать функцию
+time через каждую секунду */
+function start() {
+   id=setInterval('time()',1000);
+}
+</script>
+</body>
+</html>
